@@ -1,0 +1,57 @@
+<div class="pos">
+  <header>
+    <!--Navigation Starts Here-->
+    <nav class="navbar  navbar-expand-lg navbar-light mynav">
+
+      <img src="../../assets/favicon.jpeg" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy" />
+      <i><span>Cricket World!!</span></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item c-dark">
+            <a class="nav-link" [routerLink]="['search']" routerLinkActive="active-link" role="button">Search
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['favourites']" routerLinkActive="active-link">Favourites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['recommended']" id="navbarDropdown" role="button" routerLinkActive="active-link">
+              Recommended
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['statistics']" routerLinkActive="active-link" role="button" aria-disabled="false">Statistics</a>
+          </li>
+         
+          <li>
+            <a class="nav-link" aria-disabled="false" (click)="logout()" id="logout"> Log Out </a>
+
+          </li>
+          <li>
+
+              <a class="nav-link" [routerLink]="['edit']" routerLinkActive="active-link" aria-disabled="false"> <img class="img" src={{user.image}} width="30" height="30"> </a>
+            </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!--Navigation End's Here-->
+  </header>
+  <section >
+
+  <div style="height:100vh;" class="container-fluid">
+
+    <router-outlet></router-outlet>
+    <router-outlet name='statOpener'></router-outlet>
+
+  </div>
+</section>
+</div>
+<!-- Footer-Section -->
+<!-- <app-footer></app-footer> -->

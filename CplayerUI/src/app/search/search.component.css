@@ -1,0 +1,38 @@
+.formTaker-Expansion{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 0%;
+  margin: 2vh auto;
+  height:20%;
+  margin-bottom: 0%;
+  background-color: rgb(202, 106, 138);
+}
+.buttn{
+  width: 50%;
+  margin: 2vh auto;
+  background-color: rgb(54, 61, 168);
+}
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  background-color: rgb(43, 98, 180);
+}
+.card{
+  width: 200px;
+  margin: 15px;
+}
+.pagination{
+  position: absolute;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  right: 20px;
+   background-color: rgb(90, 70, 76);
+}
+.button-pos{
+   position: relative;
+   margin: 2vh auto;
+}
+
