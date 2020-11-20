@@ -8,9 +8,10 @@
   }
   
 .card{
-  width: 250px;
+  width: 200px;
   margin: 15px;
   height: auto;
+  background-color: bisque;
   }
   
 .sidenav .mat-toolbar {

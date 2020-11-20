@@ -6,7 +6,7 @@
 }
 .active-link
 {
-    /* background-color: orangered; */
+    color: gold !important;
 }
 i{
     margin-left:2px;

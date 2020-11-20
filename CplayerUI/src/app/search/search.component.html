@@ -2,7 +2,7 @@
 
 <div class="formTaker-Expansion">
         <mat-form-field appearance="outline">
-           <mat-label>Search Player</mat-label>
+           <mat-label>Search Cricket Player</mat-label>
            <input matInput placeholder="Please enter Name" [(ngModel)]="val">
            <mat-hint>eg. Sachin</mat-hint>
         </mat-form-field>
@@ -23,11 +23,11 @@
            </mat-card-content>
      
            <mat-card-actions>
-              <button *ngIf="data.status" mat-icon-button class="button-pos" (click)="addToFav(data)">
+              <button *ngIf="data.status" mat-icon-button class="align-self-end button-pos" (click)="addToFav(data)">
                 <mat-icon>favorite</mat-icon>
               </button>
         
-              <button *ngIf="!data.status" mat-icon-button color="warn" class="button-pos"
+              <button *ngIf="!data.status" mat-icon-button color="warn" class="align-self-end button-pos"
                 (click)="removeFromFav(data)">
                 <mat-icon>favorite</mat-icon>
               </button>

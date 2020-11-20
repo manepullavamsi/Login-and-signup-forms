@@ -1,34 +1,8 @@
-.sidenav .mat-toolbar {
-    background: inherit;
-  }
-  
-  .mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  .cardContainer{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card{
-    width: 210px;
-    margin: 10px 10px;
-    margin-bottom: 60px;
-  }
-  .button-pos{
-    position: absolute;
-    bottom: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 37%;
-  }
   .cardContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3vh;
-
     margin-bottom: 3vh;
     }
     
@@ -36,23 +10,9 @@
     width: 250px;
     margin: 15px;
     height: auto;
+    background-color: wheat;
     }
     
-  .sidenav .mat-toolbar {
-       background: inherit;
-     }
-     
-  .mat-toolbar.mat-primary {
-       position: sticky;
-       top: 0;
-       z-index: 1;
-     }
-     
-  .button-pos{
-    position: relative;
-    margin: 2vh auto;
-     }
-  
      .pagination{
       position: absolute;
       margin-top: 30px;

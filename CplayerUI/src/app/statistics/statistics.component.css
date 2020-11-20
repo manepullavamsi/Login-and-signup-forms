@@ -1,16 +1,25 @@
 .formTaker-Expansion{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: 2vh auto;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 10%;
+  margin: 2vh auto;
+  height:30%;
+  margin-bottom: 0%;
+  background-color: wheat;
  }
  .buttn{
-    width: 50%;
+    width: 20%;
     margin: 2vh auto;
+    background-color: rgb(54, 61, 168);
  }
  .cardContainer{
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(177, 181, 189);
+    text-align: justify;
+    justify-content: center;
+    margin-top: 10%;
   }
  .card{
     width: 210px;
@@ -22,48 +31,8 @@
     margin-top: 30px;
     margin-bottom: 60px;
     right: 20px;
-  }
-  .button-pos{
-     position: relative;
-     margin: 2vh auto;
+    background-color: rgb(90, 70, 76);
   }
 
-  .formTaker-Expansion{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin-top: 0%;
-    margin: 2vh auto;
-    height:20%;
-    margin-bottom: 0%;
-    background-color: rgb(202, 106, 138);
-  }
-  .buttn{
-    width: 50%;
-    margin: 2vh auto;
-    background-color: rgb(54, 61, 168);
-  }
-  .cardContainer{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    flex-wrap: wrap;
-    background-color: rgb(43, 98, 180);
-  }
-  .card{
-    width: 200px;
-    margin: 15px;
-  }
-  .pagination{
-    position: absolute;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    right: 20px;
-     background-color: rgb(90, 70, 76);
-  }
-  .button-pos{
-     position: relative;
-     margin: 2vh auto;
-  }
-  
+
   

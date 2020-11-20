@@ -12,7 +12,7 @@ import { AuthenticationService } from '../authentication.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
+  
   user: User = new User();
   userauth: UserAuth = new UserAuth();
 
@@ -27,9 +27,11 @@ export class SignupComponent implements OnInit {
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required,Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(8)]),
+    cpassword: new FormControl('', [Validators.required, Validators.minLength(8)]),
     name: new FormControl('', [Validators.required]),
     mobile: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]),
-  })
+  },
+ )
 
   get email() {
     return this.loginForm.get('email');
@@ -37,20 +39,35 @@ export class SignupComponent implements OnInit {
   get password() {
     return this.loginForm.get('password');
   }
+  get cpassword() {
+    return this.loginForm.get('cpassword');
+  }
   get name() {
     return this.loginForm.get('name');
   }
   get mobile() {
     return this.loginForm.get('mobile');
   }
+matcher(){
+if(this.loginForm.value.password===this.loginForm.value.cpassword)
+return true;
+else
+return false;
+}
 
   // sign in by calling the user and userauth services
   signIn() {
+    if(!this.matcher())
+    {
+      this.route.tosignup();
+    }
     this.user.mobile = this.loginForm.value.mobile;
     this.user.username = this.loginForm.value.email;
     this.user.name = this.loginForm.value.name;
     this.userauth.username = this.loginForm.value.email;
     this.userauth.password = this.loginForm.value.password;
+    this.userauth.cpassword = this.loginForm.value.cpassword;
+    
     this.auth.signup(this.userauth).subscribe(
       res => console.log(res),
       err => console.log(err)

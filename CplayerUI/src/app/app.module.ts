@@ -39,13 +39,11 @@ import { StatisticsOpenerComponent } from './statistics-opener/statistics-opener
 import {NgxPaginationModule} from 'ngx-pagination';
 import { HomeComponent } from './home/home.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-
     HeaderComponent,
     FooterComponent,
     DashboardComponent,

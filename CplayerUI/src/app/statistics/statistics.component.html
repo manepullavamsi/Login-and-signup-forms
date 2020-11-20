@@ -9,7 +9,7 @@
                 </mat-form-field>
              
                 <button mat-raised-button (click)="getData(val)" class="buttn" color="primary">Search</button>
-             </div>
+</div>
              
              <div class="cardContainer">
              
@@ -22,11 +22,13 @@
                    <mat-card-content>
                       Full Name : {{data.fullName}}
                    </mat-card-content>
+                   
              
                 </mat-card>
+                
              </div>
-             
              <div class="pagination">
                 <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
              </div>
+             
  

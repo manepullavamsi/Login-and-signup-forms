@@ -4,7 +4,7 @@
     <nav class="navbar  navbar-expand-lg navbar-light mynav">
 
       <img src="../../assets/favicon.jpeg" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy" />
-      <i><span>Cricket World!!</span></i>
+      <h1 style="margin-left:2%">Cricket World!!</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,28 +13,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item c-dark">
-            <a class="nav-link" [routerLink]="['search']" routerLinkActive="active-link" role="button">Search
+            <a class="nav-link" [routerLink]="['search']" routerLinkActive="active-link" ><h2>Search</h2>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['favourites']" routerLinkActive="active-link">Favourites</a>
+            <a class="nav-link" [routerLink]="['favourites']" routerLinkActive="active-link"><h2>Favourites</h2></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['recommended']" id="navbarDropdown" role="button" routerLinkActive="active-link">
-              Recommended
+            <a class="nav-link" [routerLink]="['recommended']" id="navbarDropdown"  routerLinkActive="active-link">
+            <h2>Recommended</h2>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['statistics']" routerLinkActive="active-link" role="button" aria-disabled="false">Statistics</a>
+            <a class="nav-link" [routerLink]="['statistics']" routerLinkActive="active-link" aria-disabled="false"><h2>Statistics</h2></a>
           </li>
          
           <li>
-            <a class="nav-link" aria-disabled="false" (click)="logout()" id="logout"> Log Out </a>
+            <a class="nav-link" aria-disabled="false" routerLinkActive="active-link" (click)="logout()" id="logout"> <h2>Log Out</h2></a>
 
           </li>
           <li>
 
-              <a class="nav-link" [routerLink]="['edit']" routerLinkActive="active-link" aria-disabled="false"> <img class="img" src={{user.image}} width="30" height="30"> </a>
+              <a class="nav-link" [routerLink]="['edit']"  aria-disabled="false"> <img class="img" src={{user.image}} width="50" height="50" style="margin:0px;"> </a>
             </li>
         </ul>
 

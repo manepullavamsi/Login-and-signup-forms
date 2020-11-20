@@ -124,6 +124,9 @@ export class EdituserComponent implements OnInit {
     )
   }
 
+  //delete Form
+ 
+
   // delete all user info from all the databases(user, userauth and favourites also)
   deleteUser(){
     this.userser.deleteUser(sessionStorage.getItem('username'),sessionStorage.getItem('token')).subscribe();

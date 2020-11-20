@@ -119,10 +119,9 @@ label{
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.644);
   } */
-.mt-5{
-    
-    padding-bottom: 3%;
-}
+  .card{
+    margin-bottom: 10%;
+  }
   #re{
       margin-left: 2%;
   }
