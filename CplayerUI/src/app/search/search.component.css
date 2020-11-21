@@ -1,13 +1,13 @@
-.formTaker-Expansion{
+ .formTaker-Expansion{
   display: flex;
   flex-direction: column;
   width: 60%;
   margin-top: 0%;
   margin: 2vh auto;
-  height:30%;
+  height:5%;
   margin-bottom: 0%;
-  background-color: wheat;
-}
+ 
+} 
 .buttn{
   width: 20%;
   margin: 2vh auto;
@@ -48,4 +48,6 @@ mat-card-actions button{
   margin-left: 40%;
   margin-right: 40%;
 }
-
+.input-group{
+  margin-top: 3%;
+}

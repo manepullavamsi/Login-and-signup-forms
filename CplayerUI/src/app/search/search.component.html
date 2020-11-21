@@ -1,14 +1,24 @@
 <!-- creating search button ad get a list of players -->
 
 <div class="formTaker-Expansion">
-        <mat-form-field appearance="outline">
+        <!-- <mat-form-field appearance="outline">
            <mat-label>Search Cricket Player</mat-label>
            <input matInput placeholder="Please enter Name" [(ngModel)]="val">
            <mat-hint>eg. Sachin</mat-hint>
         </mat-form-field>
-     
-        <button mat-raised-button (click)="getData(val)" class="buttn" color="primary">Search</button>
-     </div>
+        <button mat-raised-button (click)="getData(val)" class="buttn" color="primary">Search</button> -->
+        <div class="input-group">
+          <input type="text" class="form-control border border-dark" placeholder="Search Your Player here " [(ngModel)]="val">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" (click)="getData(val)">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          </div>
+          </div>
+        
+       
+    
      
      <div class="cardContainer">
      
